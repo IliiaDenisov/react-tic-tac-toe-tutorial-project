@@ -85,6 +85,23 @@ body {
   flex-direction: row;
 }
 
+.sort-order-button {
+  border-radius: 5px;
+  background-color:red;
+  font-style: normal;
+  margin-left: 20px;
+}
+
+.sort-order-button.hover {
+  background-color: aqua;
+}
+
+.sort-order-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
 .game-info {
   margin-left: 20px;
 }
