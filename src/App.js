@@ -75,9 +75,9 @@ export default function Game() {
   const moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
-      description = 'Go to move #' + move;
+      description = currentMove != move ? 'Go to move #' + move : "You are at move #" + move;
     } else {
-      description = 'Go to game start';
+      description = currentMove != move ? 'Go to game start' : "You are at the start of the game";
     }
     return (
       <li key={move}>
